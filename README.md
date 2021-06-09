@@ -7,7 +7,7 @@ A modular Telegram Python bot running on python3 with a sqlalchemy database and 
 
 Can be found on telegram as [Ken Ryuguji](http://t.me/KenRyugujiRobot).
 
-The Support group can be reached out to at [Ken Support](https://t.me/TokyoManjisupport), where you can ask for help about [KenRyuguji](https://t.me/KenRyugujirobot), discover/request new features, report bugs, and stay in the loop whenever a new update is available. 
+The Support group can be reached out to at [Ken Support](https://t.me/TokyoManjisupport), where you can ask for help about [Ken Ryuguji](https://t.me/KenRyugujirobot), discover/request new features, report bugs, and stay in the loop whenever a new update is available. 
 
 News channel as at [Tokyo Manji Updates](https://t.me/TokyoManjiUpdates) 
 
