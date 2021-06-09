@@ -195,7 +195,7 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text="➕ Add Kurisu To Your Group",
+                            text="🤘🏻 Add Ken To Your Group",
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username))
                     ],
@@ -205,7 +205,7 @@ def start(update: Update, context: CallbackContext):
                              url=f"https://t.me/{SUPPORT_CHAT}"),
                          InlineKeyboardButton(
                              text="🎉 Updates",
-                             url="https://t.me/steinsupdates"),
+                             url="https://t.me/TokyoManjiUpdates"),
                          InlineKeyboardButton(
                              text="🗃 Guide",
                              url="https://t.me/Steinsupdates/7"),
@@ -217,7 +217,7 @@ def start(update: Update, context: CallbackContext):
                              url="https://t.me/ias_chats"),                    
                         InlineKeyboardButton(
                              text="Help & Commands",
-                             url="https://t.me/Kurisu_Makise_Robot?start=help"),      
+                             url="https://t.me/KenRyugujiRobot?start=help"),      
                     ]]))
     else:
         update.effective_message.reply_video(
