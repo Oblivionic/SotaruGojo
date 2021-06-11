@@ -53,7 +53,8 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *Eureka! {}, myself {}!* 
-*An Anime themed group management bot from* [Tokyo;Revengers](https://anilist.co/anime/120120)!!
+`I'm the strongest there is, after all.`
+*An Anime themed group management bot from* [Jujutsu Kaisen](https://anilist.co/anime/113415/Jujutsu-Kaisen)!!
 
 """
 
@@ -62,13 +63,13 @@ HELP_STRINGS = """
 *AI Chatbot*, *Anime*, *Music*, *Notes*, *Filters*, *NSFW* *and more!*
 
 🎛 *All commands can either be used with* `/` *or* `!`.
-🎛 *Reach out for support:* @TokyoManjiSupport [.](https://telegra.ph/file/2291942331f135e3292ee.png)
+🎛 *Reach out for support:* @TokyoManjiSupport [.](https://wallpapercave.com/wp/wp9017123.jpg)
 """.format(
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-KURISU_IMG = "https://telegra.ph/file/6152bf2f73ca8ea30772a.png"
-KURISUIMGSTART = "https://telegra.ph/file/9fda0272bcd1ea7876798.mp4"
+KURISU_IMG = "https://wallpapercave.com/wp/wp9017042.jpg"
+KURISUIMGSTART = "https://i.imgur.com/wgXR3jU.mp4"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 You can donate to the original writer of the Base code, Paul
@@ -193,7 +194,7 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text="🤘🏻 Add Ken To Your Group",
+                            text="🤘🏻 Add Gojo Satoru To Your Group",
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username))
                     ],
@@ -215,13 +216,13 @@ def start(update: Update, context: CallbackContext):
                              url="https://t.me/ias_chats"),                    
                         InlineKeyboardButton(
                              text="Help & Commands",
-                             url="https://t.me/KenRyugujiRobot?start=help"),      
+                             url="https://t.me/SatorugojoProbot?start=help"),      
                     ]]))
     else:
         update.effective_message.reply_video(
                 KURISUIMGSTART)
         update.effective_message.reply_text(
-            "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>"
+            "Don't Worry, I'm the strongest!\n<b>Using Reverse cursed techniques since:</b> <code>{}</code>"
             .format(uptime),
             parse_mode=ParseMode.HTML)
 
@@ -539,7 +540,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "[I am now online!](https://telegra.ph/file/26aeb38f38eb8c819e423.mp4)", parse_mode=ParseMode.MARKDOWN)
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "[I am now online!](https://i.imgur.com/jreiXZe.mp4)", parse_mode=ParseMode.MARKDOWN)
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!")
@@ -583,7 +584,7 @@ def main():
             updater.bot.set_webhook(url=URL + TOKEN)
 
     else:
-        LOGGER.info("Kurisu Makise is deployed sucessfully...")
+        LOGGER.info("Gojo Satoru is deployed sucessfully...")
         updater.start_polling(timeout=15, read_latency=4, clean=True)
 
     if len(argv) not in (1, 3, 4):
