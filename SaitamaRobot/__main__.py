@@ -68,8 +68,8 @@ HELP_STRINGS = """
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-KURISU_IMG = "https://wallpapercave.com/wp/wp9017042.jpg"
-KURISUIMGSTART = "https://i.imgur.com/wgXR3jU.mp4"
+KURISU_IMG = "https://telegra.ph/file/620abb345b6ec6118fadb.jpg"
+KURISUIMGSTART = "https://telegra.ph/file/7a642613c8dfc33372e08.mp4"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 You can donate to the original writer of the Base code, Paul
