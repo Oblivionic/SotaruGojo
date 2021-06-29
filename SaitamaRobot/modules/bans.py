@@ -55,20 +55,20 @@ def ban(update: Update, context: CallbackContext) -> str:
                 "Trying to put me against a God level disaster huh?")
             return log_message
         elif user_id in DEV_USERS:
-            message.reply_text("I can't act against our own.")
+            message.reply_text("I can't act against our Jujutsu Sorcerers.")
             return log_message
         elif user_id in DRAGONS:
             message.reply_text(
-                "Fighting this Dragon here will put civilian lives at risk.")
+                "Fighting this Grade here will put civilian lives at risk.")
             return log_message
         elif user_id in DEMONS:
             message.reply_text(
-                "Bring an order from Heroes association to fight a Demon disaster."
+                "Bring an order from Jujutsu Sorcerers to fight a Demon disaster."
             )
             return log_message
         elif user_id in TIGERS:
             message.reply_text(
-                "Bring an order from Heroes association to fight a Tiger disaster."
+                "Bring an order from Jujutsu Sorcerers to fight a Tiger disaster."
             )
             return log_message
         elif user_id in WOLVES:
