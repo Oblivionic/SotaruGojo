@@ -181,7 +181,7 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Devs
             elif new_mem.id in DEV_USERS:
                 update.effective_message.reply_text(
-                    "Whoa! A member of the Heroes Association just joined!",
+                    "Whoa! A Jujutsu Sorcerer just joined!",
                     reply_to_message_id=reply,
                 )
                 continue
@@ -483,13 +483,13 @@ def left_member(update: Update, context: CallbackContext):
             # Give the owner a special goodbye
             if left_mem.id == OWNER_ID:
                 update.effective_message.reply_text(
-                    "Oi! Genos! He left..", reply_to_message_id=reply)
+                    "Oi! Itadori! He left..", reply_to_message_id=reply)
                 return
 
             # Give the devs a special goodbye
             elif left_mem.id in DEV_USERS:
                 update.effective_message.reply_text(
-                    "See you later at the Hero's Association!",
+                    "See you later with the Jujutsu Sorcerers!",
                     reply_to_message_id=reply,
                 )
                 return
@@ -819,14 +819,14 @@ def clean_welcome(update: Update, context: CallbackContext) -> str:
     elif args[0].lower() in ("off", "no"):
         sql.set_clean_welcome(str(chat.id), False)
         update.effective_message.reply_text(
-            "I won't delete old welcome messages.")
+            "I won't delete old welcome messages 🤧.")
         return (f"<b>{html.escape(chat.title)}:</b>\n"
                 f"#CLEAN_WELCOME\n"
                 f"<b>Admin:</b> {mention_html(user.id, user.first_name)}\n"
                 f"Has toggled clean welcomes to <code>OFF</code>.")
     else:
         update.effective_message.reply_text(
-            "I understand 'on/yes' or 'off/no' only!")
+            "I understand 'on/yes' or 'off/no' only! 🥴")
         return ""
 
 
